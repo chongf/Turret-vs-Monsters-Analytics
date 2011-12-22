@@ -121,14 +121,10 @@
     self.levels = [[[NSMutableArray alloc] init] autorelease];
     Level *level1 = [[[Level alloc] initWithLevelNum:1 spawnRate:1 bgImageName:@"bg.png"] autorelease];
     Level *level2 = [[[Level alloc] initWithLevelNum:2 spawnRate:2 bgImageName:@"bg2.png"] autorelease];
-    Level *level3 = [[[Level alloc] initWithLevelNum:3 spawnRate:2 bgImageName:@"bg.png"] autorelease];
-    //Level *level4 = [[[Level alloc] initWithLevelNum:4 spawnRate:4 bgImageName:@"bg2.png"] autorelease];	
-	//Level *level5 = [[[Level alloc] initWithLevelNum:5 spawnRate:5 bgImageName:@"bg.png"] autorelease];
+
  	[_levels addObject:level1];
     [_levels addObject:level2];
- 	[_levels addObject:level3];
-    //[_levels addObject:level4];
-	//[_levels addObject:level5];
+
 	
     self.curLevelIndex = 0;
     
@@ -186,7 +182,7 @@
     [[CCDirector sharedDirector] replaceScene:_gameOverScene];
 
 	// Track level loss (as custom metric)
-	//[[Playtomic Log] customMetricName:@"YouLose" andGroup:nil andUnique:NO];
+	[[Playtomic Log] customMetricName:@"YouLose" andGroup:nil andUnique:NO];
 
 }
 
@@ -196,7 +192,7 @@
     [[CCDirector sharedDirector] replaceScene:_gameOverScene];
 
 	// Track level win (as custom metric)
-	//[[Playtomic Log] customMetricName:@"YouWin" andGroup:nil andUnique:NO];
+	[[Playtomic Log] customMetricName:@"YouWin" andGroup:nil andUnique:NO];
 }
 
 - (void)loadNewLevelScene {
@@ -217,7 +213,7 @@
 - (void)levelComplete {    
 
 	// Track level restart
-	//[[Playtomic Log] levelCounterMetricName:@"LevelComplete" andLevelNumber:_curLevelIndex andUnique:NO];
+	[[Playtomic Log] levelCounterMetricName:@"LevelComplete" andLevelNumber:_curLevelIndex andUnique:NO];
     
     _curLevelIndex++;
     if (_curLevelIndex >= [_levels count]) {

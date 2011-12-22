@@ -247,7 +247,7 @@
 			[_targets removeObject:target];
 			[self removeChild:target cleanup:YES];									
 			_projectilesDestroyed++;
-			if (_projectilesDestroyed > 0) {
+			if (_projectilesDestroyed > 4) {
                 
                 Cocos2DSimpleGameAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
                 [delegate levelComplete];

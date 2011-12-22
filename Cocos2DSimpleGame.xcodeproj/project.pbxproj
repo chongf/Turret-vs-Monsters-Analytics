@@ -384,6 +384,7 @@
 		3BC890EB1471A7A8002E19AE /* PlaytomicScore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaytomicScore.m; sourceTree = "<group>"; };
 		3BC890ED1471A7A8002E19AE /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		3BC890EE1471A7A8002E19AE /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		3BFC7D5814A3C4A000526CA1 /* libz.1.2.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.3.dylib; path = usr/lib/libz.1.2.3.dylib; sourceTree = SDKROOT; };
 		504DFBC810AF12E9006D82FE /* CLScoreServerPost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLScoreServerPost.h; sourceTree = "<group>"; };
 		504DFBC910AF12E9006D82FE /* CLScoreServerPost.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLScoreServerPost.m; sourceTree = "<group>"; };
 		504DFBCA10AF12E9006D82FE /* CLScoreServerRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLScoreServerRequest.h; sourceTree = "<group>"; };
@@ -646,10 +647,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BC8903614719706002E19AE /* libz.1.2.3.dylib in Frameworks */,
 				3BC8903D1471973A002E19AE /* SystemConfiguration.framework in Frameworks */,
 				3BC8903B1471972D002E19AE /* MobileCoreServices.framework in Frameworks */,
 				3BC8903914719721002E19AE /* CFNetwork.framework in Frameworks */,
-				3BC8903614719706002E19AE /* libz.1.2.3.dylib in Frameworks */,
 				DCCBF1B70F6022AE0040855A /* CoreGraphics.framework in Frameworks */,
 				DCCBF1B90F6022AE0040855A /* Foundation.framework in Frameworks */,
 				DCCBF1BB0F6022AE0040855A /* OpenGLES.framework in Frameworks */,
@@ -692,6 +693,7 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				3BFC7D5814A3C4A000526CA1 /* libz.1.2.3.dylib */,
 				3BC890A91471A7A8002E19AE /* Playtomic */,
 				3BC8903C1471973A002E19AE /* SystemConfiguration.framework */,
 				3BC8903A1471972D002E19AE /* MobileCoreServices.framework */,
