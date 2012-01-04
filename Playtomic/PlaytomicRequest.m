@@ -8,10 +8,9 @@
 
 #import "PlaytomicRequest.h"
 #import "PlaytomicEncrypt.h"
-#import "ASI/ASIFormDataRequest.h"
-#import "ASI/ASIHTTPRequest.h"
 #import "Playtomic.h"
 #import "JSON/JSON.h"
+#import "PlaytomicURLRequest.h"
 
 
 NSInteger compareStringValue(id a, id b, void *context) {
@@ -63,10 +62,12 @@ NSInteger compareStringValue(id a, id b, void *context) {
     NSString *newUrl = [NSString stringWithFormat:@"%@&r=%dZ", url,arc4random()];
     
     
-    ASIFormDataRequest *request = [ASIFormDataRequest requestWithURL:[NSURL URLWithString:newUrl]];
+    //ASIFormDataRequest *request = [ASIFormDataRequest requestWithURL:[NSURL URLWithString:newUrl]];
+    PlaytomicURLRequest *request = [[PlaytomicURLRequest alloc] initWithDomain:newUrl];
     
     [request setDelegate:completeDelegate];
-    request.didFinishSelector = completeSelector;
+    //request.didFinishSelector = completeSelector;
+    request.completeSelector = completeSelector;
 
     
     
@@ -119,8 +120,8 @@ NSInteger compareStringValue(id a, id b, void *context) {
 
 
     
-    ASIFormDataRequest *request = [ASIFormDataRequest requestWithURL:[NSURL URLWithString:newUrl]];
-    
+    //ASIFormDataRequest *request = [ASIFormDataRequest requestWithURL:[NSURL URLWithString:newUrl]];
+    PlaytomicURLRequest *request = [[[PlaytomicURLRequest alloc] initWithDomain:newUrl] autorelease];
 
        
     NSDate *today = [NSDate date];

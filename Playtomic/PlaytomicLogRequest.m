@@ -37,7 +37,7 @@
 #import "PlaytomicLogRequest.h"
 #import "Playtomic.h"
 #import "PlaytomicLog.h"
-#import "ASI/ASIHTTPRequest.h"
+#import "PlaytomicURLRequest.h"
 
 NSString * const PLAYTOMIC_QUEUE_SIZE = @"playtomic.queue.size";
 NSString * const PLAYTOMIC_QUEUE_BYTES = @"playtomic.queue.bytes";
@@ -53,10 +53,10 @@ int const PLAYTOMIC_QUEUE_MAX_BYTES = 1048577; // actually the max size is 10485
 @property (nonatomic,copy) NSString *data;
 @property (nonatomic,copy) NSString *trackUrl;
 @property (assign) BOOL mustReleaseOnRequestFinished;
-@property (retain) ASIHTTPRequest* _request;
+@property (retain) PlaytomicURLRequest* _request;
 
 
-- (void)requestFailed:(ASIHTTPRequest *)request;
+- (void)requestFailed:(PlaytomicURLRequest *)request;
 
 @end
 
@@ -71,6 +71,7 @@ int const PLAYTOMIC_QUEUE_MAX_BYTES = 1048577; // actually the max size is 10485
 {
     self.trackUrl = url;
     self.data = @"";
+    self.mustReleaseOnRequestFinished = true;
     return self;
 }
 
@@ -127,8 +128,8 @@ int const PLAYTOMIC_QUEUE_MAX_BYTES = 1048577; // actually the max size is 10485
     {    
         //NSLog(@"Internet is active");
         
-        self._request = [[[ASIHTTPRequest alloc] initWithURL:[NSURL URLWithString:fullurl]] autorelease];
-        [_request HEADRequest];
+        self._request = [[PlaytomicURLRequest alloc] initWithDomain:fullurl];
+        //[_request HEADRequest];
         [_request setDelegate:self];
         [_request startAsynchronous];
         //[request autorelease];
@@ -141,7 +142,7 @@ int const PLAYTOMIC_QUEUE_MAX_BYTES = 1048577; // actually the max size is 10485
     }
 }
 
-- (void)requestFinished:(ASIHTTPRequest*)request
+- (void)requestFinished:(PlaytomicURLRequest*)request
 {
     //NSLog(@"request finished");
     
@@ -187,7 +188,7 @@ int const PLAYTOMIC_QUEUE_MAX_BYTES = 1048577; // actually the max size is 10485
     }
 }
 
-- (void)requestFailed:(ASIHTTPRequest *)request
+- (void)requestFailed:(PlaytomicURLRequest *)request
 {
     //NSLog(@"request failed %@", [request error]);
     

@@ -39,13 +39,13 @@
 #import "PlaytomicGameVars.h"
 #import "PlaytomicResponse.h"
 #import "JSON/JSON.h"
-#import "ASI/ASIHTTPRequest.h"
 #import "PlaytomicRequest.h"
 #import "PlaytomicEncrypt.h"
+#import "PlaytomicURLRequest.h"
 
 @interface PlaytomicGameVars() 
 
-- (void)requestLoadFinished:(ASIHTTPRequest*)request;
+- (void)requestLoadFinished:(PlaytomicURLRequest*)request;
 
 @end
 
@@ -104,7 +104,7 @@
     [PlaytomicRequest sendRequestUrl:url andSection:section andAction:action andCompleteDelegate:self andCompleteSelector:@selector(requestLoadFinished:) andPostData:postData];
 }
 
-- (void)requestLoadFinished:(ASIHTTPRequest*)request
+- (void)requestLoadFinished:(PlaytomicURLRequest*)request
 {    
     if (!(delegate && [delegate respondsToSelector:@selector(requestLoadGameVarsFinished:)])) {
         return;
@@ -125,7 +125,7 @@
     SBJsonParser *parser = [[SBJsonParser alloc] init];
     NSArray *data = [parser objectWithString:json error:nil];
     
-    //[request release];
+    [request release];
     [json release];
     [parser release];
     

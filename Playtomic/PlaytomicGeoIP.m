@@ -38,13 +38,13 @@
 #import "PlaytomicGeoIP.h"
 #import "PlaytomicResponse.h"
 #import "JSON/JSON.h"
-#import "ASI/ASIHTTPRequest.h"
 #import "PlaytomicRequest.h"
 #import "PlaytomicEncrypt.h"
+#import "PlaytomicURLRequest.h"
 
 @interface PlaytomicGeoIP() 
 
-- (void)requestLoadFinished:(ASIHTTPRequest*)request;
+- (void)requestLoadFinished:(PlaytomicURLRequest*)request;
 
 @end
 
@@ -104,7 +104,7 @@
     [PlaytomicRequest sendRequestUrl:url andSection:section andAction:action andCompleteDelegate:self andCompleteSelector:@selector(requestLoadFinished:) andPostData:postData];
 }
 
-- (void) requestLoadFinished:(ASIHTTPRequest *)request
+- (void) requestLoadFinished:(PlaytomicURLRequest *)request
 {
     if (!(delegate && [delegate respondsToSelector:@selector(requestLoadGeoIPFinished:)])) {
         return;
@@ -126,7 +126,7 @@
     NSArray *data = [parser objectWithString:json error:nil];
     NSInteger status = [[data valueForKey:@"Status"] integerValue];
     
-    //[request release];
+    [request release];
     [json release];
     [parser release];
     

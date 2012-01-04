@@ -38,13 +38,13 @@
 #import "PlaytomicResponse.h"
 #import "Playtomic.h"
 #import "JSON/JSON.h"
-#import "ASI/ASIHTTPRequest.h"
 #import "PlaytomicRequest.h"
 #import "PlaytomicEncrypt.h"
+#import "PlaytomicURLRequest.h"
 
 @interface PlaytomicData()
 
-- (void)requestGetDataFinished:(ASIHTTPRequest*)request;
+- (void)requestGetDataFinished:(PlaytomicURLRequest*)request;
 
 @end
 
@@ -497,7 +497,7 @@
 // get data
 - (PlaytomicResponse*)getDataUrl:(NSString*)url
 {    
-    ASIHTTPRequest *request = [[[ASIHTTPRequest alloc] initWithURL:[NSURL URLWithString:url]] autorelease];
+    PlaytomicURLRequest *request = [[[PlaytomicURLRequest alloc] initWithDomain:url] autorelease];
     [request startSynchronous];
     
     NSError *error = [request error];
@@ -1061,16 +1061,16 @@
 - (void)getDataAsyncUrl:(NSString*)url 
             andDelegate:(id<PlaytomicDelegate>)aDelegate
 {    
-    ASIHTTPRequest *request = [[ASIHTTPRequest alloc] initWithURL:[NSURL URLWithString:url]];
+    PlaytomicURLRequest *request = [[[PlaytomicURLRequest alloc] initWithDomain:url]autorelease];
 
     delegate = aDelegate;
     
     [request setDelegate:self];
-    request.didFinishSelector = @selector(requestGetDataFinished:);
+    request.completeSelector = @selector(requestGetDataFinished:);
     [request startAsynchronous];
 }
 
-- (void)requestGetDataFinished:(ASIHTTPRequest*)request
+- (void)requestGetDataFinished:(PlaytomicURLRequest*)request
 {
     if (!(delegate && [delegate respondsToSelector:requestFinished]))
     {
@@ -1097,7 +1097,7 @@
     //[request autorelease];
     [json release];
     [parser release];
-    
+    [request release];
     // failed on the server side
     if(status != 1)
     {

@@ -38,17 +38,16 @@
 #import "PlaytomicResponse.h"
 #import "Playtomic.h"
 #import "JSON/JSON.h"
-#import "ASI/ASIFormDataRequest.h"
-#import "ASI/ASIHTTPRequest.h"
 #import "PlaytomicRequest.h"
 #include "PlaytomicEncrypt.h"
+#import "PlaytomicURLRequest.h"
 
 @interface PlaytomicPlayerLevels() 
 
-- (void)requestLoadFinished:(ASIHTTPRequest*)request;
-- (void)requestRateFinished:(ASIHTTPRequest*)request;
-- (void)requestListFinished:(ASIHTTPRequest*)request;
-- (void)requestSaveFinished:(ASIHTTPRequest*)request;
+- (void)requestLoadFinished:(PlaytomicURLRequest*)request;
+- (void)requestRateFinished:(PlaytomicURLRequest*)request;
+- (void)requestListFinished:(PlaytomicURLRequest*)request;
+- (void)requestSaveFinished:(PlaytomicURLRequest*)request;
 
 - (void)addLevel:(NSDictionary*)level 
       ForLevelid:(NSString*)levelid 
@@ -328,7 +327,7 @@
     
 }
 
-- (void)requestLoadFinished:(ASIHTTPRequest*)request
+- (void)requestLoadFinished:(PlaytomicURLRequest*)request
 {
     if (!(delegate && [delegate respondsToSelector:@selector(requestLoadPlayerLevelsFinished:)])) {
         return;
@@ -352,7 +351,7 @@
     
     [json release];
     [parser release];
-    
+    [request release];
     // failed on the server side
     if(status != 1)
     {
@@ -407,7 +406,7 @@
     
 }
 
-- (void)requestRateFinished:(ASIHTTPRequest*)request
+- (void)requestRateFinished:(PlaytomicURLRequest*)request
 {
     if (!(delegate && [delegate respondsToSelector:@selector(requestRatePlayerLevelsFinished:)])) {
         return;
@@ -433,7 +432,7 @@
     //[request autorelrease];
     [json release];
     [parser release];
-    
+    [request release];
     // failed on the server side
     if(status != 1)
     {
@@ -523,12 +522,12 @@
                           andSection:section 
                            andAction:action
                  andCompleteDelegate:self 
-                 andCompleteSelector:@selector(requestLoadFinished:)
+                 andCompleteSelector:@selector(requestListFinished:)
                          andPostData:postData];       
     delegate = aDelegate;
 }
 
-- (void)requestListFinished:(ASIHTTPRequest*)request
+- (void)requestListFinished:(PlaytomicURLRequest*)request
 {
     if (!(delegate && [delegate respondsToSelector:@selector(requestListPlayerLevelsFinished:)])) {
         return;
@@ -553,7 +552,7 @@
     //[request autorelease];
     [json release];
     [parser release];
-    
+    [request release];
     // failed on the server side
     if(status != 1)
     {
@@ -643,7 +642,7 @@
     
 }
 
-- (void)requestSaveFinished:(ASIHTTPRequest*)request
+- (void)requestSaveFinished:(PlaytomicURLRequest*)request
 {
     if (!(delegate && [delegate respondsToSelector:@selector(requestListPlayerLevelsFinished:)])) {
         return;
@@ -666,7 +665,7 @@
     
     [json release];
     [parser release];
-    
+    [request release];
     if(status == 1)
     {
         NSDictionary *dvars = [data valueForKey:@"Data"];

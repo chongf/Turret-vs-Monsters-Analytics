@@ -9,42 +9,34 @@
 /* Begin PBXBuildFile section */
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		1F3B9A2D0EF2145700286867 /* Cocos2DSimpleGameAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F3B9A2B0EF2145700286867 /* Cocos2DSimpleGameAppDelegate.m */; };
+		3B79DF2814B49B32007503F2 /* Credits.markdown in Resources */ = {isa = PBXBuildFile; fileRef = 3B79DEF814B49B32007503F2 /* Credits.markdown */; };
+		3B79DF2914B49B32007503F2 /* JSON LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 3B79DEF914B49B32007503F2 /* JSON LICENSE */; };
+		3B79DF2A14B49B32007503F2 /* NSObject+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B79DEFC14B49B32007503F2 /* NSObject+SBJSON.m */; };
+		3B79DF2B14B49B32007503F2 /* NSString+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B79DEFE14B49B32007503F2 /* NSString+SBJSON.m */; };
+		3B79DF2C14B49B32007503F2 /* SBJsonBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B79DF0014B49B32007503F2 /* SBJsonBase.m */; };
+		3B79DF2D14B49B32007503F2 /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B79DF0214B49B32007503F2 /* SBJsonParser.m */; };
+		3B79DF2E14B49B32007503F2 /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B79DF0414B49B32007503F2 /* SBJsonWriter.m */; };
+		3B79DF2F14B49B32007503F2 /* Playtomic.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B79DF0614B49B32007503F2 /* Playtomic.m */; };
+		3B79DF3014B49B32007503F2 /* PlaytomicData.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B79DF0814B49B32007503F2 /* PlaytomicData.m */; };
+		3B79DF3114B49B32007503F2 /* PlaytomicEncrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B79DF0A14B49B32007503F2 /* PlaytomicEncrypt.m */; };
+		3B79DF3214B49B32007503F2 /* PlaytomicGameVars.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B79DF0C14B49B32007503F2 /* PlaytomicGameVars.m */; };
+		3B79DF3314B49B32007503F2 /* PlaytomicGeoIP.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B79DF0E14B49B32007503F2 /* PlaytomicGeoIP.m */; };
+		3B79DF3414B49B32007503F2 /* PlaytomicLeaderboards.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B79DF1014B49B32007503F2 /* PlaytomicLeaderboards.m */; };
+		3B79DF3514B49B32007503F2 /* PlaytomicLevel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B79DF1214B49B32007503F2 /* PlaytomicLevel.m */; };
+		3B79DF3614B49B32007503F2 /* PlaytomicLink.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B79DF1414B49B32007503F2 /* PlaytomicLink.m */; };
+		3B79DF3714B49B32007503F2 /* PlaytomicLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B79DF1614B49B32007503F2 /* PlaytomicLog.m */; };
+		3B79DF3814B49B32007503F2 /* PlaytomicLogRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B79DF1814B49B32007503F2 /* PlaytomicLogRequest.m */; };
+		3B79DF3914B49B32007503F2 /* PlaytomicPlayerLevels.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B79DF1A14B49B32007503F2 /* PlaytomicPlayerLevels.m */; };
+		3B79DF3A14B49B32007503F2 /* PlaytomicPrivateLeaderboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B79DF1C14B49B32007503F2 /* PlaytomicPrivateLeaderboard.m */; };
+		3B79DF3B14B49B32007503F2 /* PlaytomicRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B79DF1E14B49B32007503F2 /* PlaytomicRequest.m */; };
+		3B79DF3C14B49B32007503F2 /* PlaytomicResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B79DF2014B49B32007503F2 /* PlaytomicResponse.m */; };
+		3B79DF3D14B49B32007503F2 /* PlaytomicScore.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B79DF2214B49B32007503F2 /* PlaytomicScore.m */; };
+		3B79DF3E14B49B32007503F2 /* PlaytomicURLRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B79DF2414B49B32007503F2 /* PlaytomicURLRequest.m */; };
+		3B79DF3F14B49B32007503F2 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B79DF2714B49B32007503F2 /* Reachability.m */; };
 		3BC8903614719706002E19AE /* libz.1.2.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BC8903514719706002E19AE /* libz.1.2.3.dylib */; };
 		3BC8903914719721002E19AE /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BC8903814719721002E19AE /* CFNetwork.framework */; };
 		3BC8903B1471972D002E19AE /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BC8903A1471972D002E19AE /* MobileCoreServices.framework */; };
 		3BC8903D1471973A002E19AE /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BC8903C1471973A002E19AE /* SystemConfiguration.framework */; };
-		3BC890EF1471A7A8002E19AE /* ASI LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 3BC890AB1471A7A8002E19AE /* ASI LICENSE */; };
-		3BC890F01471A7A8002E19AE /* ASIAuthenticationDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BC890AD1471A7A8002E19AE /* ASIAuthenticationDialog.m */; };
-		3BC890F11471A7A8002E19AE /* ASIDataCompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BC890B01471A7A8002E19AE /* ASIDataCompressor.m */; };
-		3BC890F21471A7A8002E19AE /* ASIDataDecompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BC890B21471A7A8002E19AE /* ASIDataDecompressor.m */; };
-		3BC890F31471A7A8002E19AE /* ASIDownloadCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BC890B41471A7A8002E19AE /* ASIDownloadCache.m */; };
-		3BC890F41471A7A8002E19AE /* ASIFormDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BC890B61471A7A8002E19AE /* ASIFormDataRequest.m */; };
-		3BC890F51471A7A8002E19AE /* ASIHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BC890B81471A7A8002E19AE /* ASIHTTPRequest.m */; };
-		3BC890F61471A7A8002E19AE /* ASIInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BC890BC1471A7A8002E19AE /* ASIInputStream.m */; };
-		3BC890F71471A7A8002E19AE /* ASINetworkQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BC890BE1471A7A8002E19AE /* ASINetworkQueue.m */; };
-		3BC890F81471A7A8002E19AE /* Credits.markdown in Resources */ = {isa = PBXBuildFile; fileRef = 3BC890C11471A7A8002E19AE /* Credits.markdown */; };
-		3BC890F91471A7A8002E19AE /* JSON LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 3BC890C21471A7A8002E19AE /* JSON LICENSE */; };
-		3BC890FA1471A7A8002E19AE /* NSObject+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BC890C51471A7A8002E19AE /* NSObject+SBJSON.m */; };
-		3BC890FB1471A7A8002E19AE /* NSString+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BC890C71471A7A8002E19AE /* NSString+SBJSON.m */; };
-		3BC890FC1471A7A8002E19AE /* SBJsonBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BC890C91471A7A8002E19AE /* SBJsonBase.m */; };
-		3BC890FD1471A7A8002E19AE /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BC890CB1471A7A8002E19AE /* SBJsonParser.m */; };
-		3BC890FE1471A7A8002E19AE /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BC890CD1471A7A8002E19AE /* SBJsonWriter.m */; };
-		3BC890FF1471A7A8002E19AE /* Playtomic.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BC890CF1471A7A8002E19AE /* Playtomic.m */; };
-		3BC891001471A7A8002E19AE /* PlaytomicData.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BC890D11471A7A8002E19AE /* PlaytomicData.m */; };
-		3BC891011471A7A8002E19AE /* PlaytomicEncrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BC890D31471A7A8002E19AE /* PlaytomicEncrypt.m */; };
-		3BC891021471A7A8002E19AE /* PlaytomicGameVars.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BC890D51471A7A8002E19AE /* PlaytomicGameVars.m */; };
-		3BC891031471A7A8002E19AE /* PlaytomicGeoIP.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BC890D71471A7A8002E19AE /* PlaytomicGeoIP.m */; };
-		3BC891041471A7A8002E19AE /* PlaytomicLeaderboards.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BC890D91471A7A8002E19AE /* PlaytomicLeaderboards.m */; };
-		3BC891051471A7A8002E19AE /* PlaytomicLevel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BC890DB1471A7A8002E19AE /* PlaytomicLevel.m */; };
-		3BC891061471A7A8002E19AE /* PlaytomicLink.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BC890DD1471A7A8002E19AE /* PlaytomicLink.m */; };
-		3BC891071471A7A8002E19AE /* PlaytomicLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BC890DF1471A7A8002E19AE /* PlaytomicLog.m */; };
-		3BC891081471A7A8002E19AE /* PlaytomicLogRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BC890E11471A7A8002E19AE /* PlaytomicLogRequest.m */; };
-		3BC891091471A7A8002E19AE /* PlaytomicPlayerLevels.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BC890E31471A7A8002E19AE /* PlaytomicPlayerLevels.m */; };
-		3BC8910A1471A7A8002E19AE /* PlaytomicPrivateLeaderboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BC890E51471A7A8002E19AE /* PlaytomicPrivateLeaderboard.m */; };
-		3BC8910B1471A7A8002E19AE /* PlaytomicRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BC890E71471A7A8002E19AE /* PlaytomicRequest.m */; };
-		3BC8910C1471A7A8002E19AE /* PlaytomicResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BC890E91471A7A8002E19AE /* PlaytomicResponse.m */; };
-		3BC8910D1471A7A8002E19AE /* PlaytomicScore.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BC890EB1471A7A8002E19AE /* PlaytomicScore.m */; };
-		3BC8910E1471A7A8002E19AE /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BC890EE1471A7A8002E19AE /* Reachability.m */; };
 		504DFBCE10AF12E9006D82FE /* CLScoreServerPost.h in Headers */ = {isa = PBXBuildFile; fileRef = 504DFBC810AF12E9006D82FE /* CLScoreServerPost.h */; };
 		504DFBCF10AF12E9006D82FE /* CLScoreServerPost.m in Sources */ = {isa = PBXBuildFile; fileRef = 504DFBC910AF12E9006D82FE /* CLScoreServerPost.m */; };
 		504DFBD010AF12E9006D82FE /* CLScoreServerRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 504DFBCA10AF12E9006D82FE /* CLScoreServerRequest.h */; };
@@ -314,76 +306,57 @@
 		1F3B9A2C0EF2145700286867 /* Cocos2DSimpleGameAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Cocos2DSimpleGameAppDelegate.h; path = Classes/Cocos2DSimpleGameAppDelegate.h; sourceTree = SOURCE_ROOT; };
 		1F3B9A820EF2151B00286867 /* Cocos2DSimpleGame_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cocos2DSimpleGame_Prefix.pch; sourceTree = SOURCE_ROOT; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3B79DEF814B49B32007503F2 /* Credits.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Credits.markdown; sourceTree = "<group>"; };
+		3B79DEF914B49B32007503F2 /* JSON LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "JSON LICENSE"; sourceTree = "<group>"; };
+		3B79DEFA14B49B32007503F2 /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSON.h; sourceTree = "<group>"; };
+		3B79DEFB14B49B32007503F2 /* NSObject+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJSON.h"; sourceTree = "<group>"; };
+		3B79DEFC14B49B32007503F2 /* NSObject+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SBJSON.m"; sourceTree = "<group>"; };
+		3B79DEFD14B49B32007503F2 /* NSString+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SBJSON.h"; sourceTree = "<group>"; };
+		3B79DEFE14B49B32007503F2 /* NSString+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SBJSON.m"; sourceTree = "<group>"; };
+		3B79DEFF14B49B32007503F2 /* SBJsonBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonBase.h; sourceTree = "<group>"; };
+		3B79DF0014B49B32007503F2 /* SBJsonBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonBase.m; sourceTree = "<group>"; };
+		3B79DF0114B49B32007503F2 /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonParser.h; sourceTree = "<group>"; };
+		3B79DF0214B49B32007503F2 /* SBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonParser.m; sourceTree = "<group>"; };
+		3B79DF0314B49B32007503F2 /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
+		3B79DF0414B49B32007503F2 /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
+		3B79DF0514B49B32007503F2 /* Playtomic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Playtomic.h; sourceTree = "<group>"; };
+		3B79DF0614B49B32007503F2 /* Playtomic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Playtomic.m; sourceTree = "<group>"; };
+		3B79DF0714B49B32007503F2 /* PlaytomicData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaytomicData.h; sourceTree = "<group>"; };
+		3B79DF0814B49B32007503F2 /* PlaytomicData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaytomicData.m; sourceTree = "<group>"; };
+		3B79DF0914B49B32007503F2 /* PlaytomicEncrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaytomicEncrypt.h; sourceTree = "<group>"; };
+		3B79DF0A14B49B32007503F2 /* PlaytomicEncrypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaytomicEncrypt.m; sourceTree = "<group>"; };
+		3B79DF0B14B49B32007503F2 /* PlaytomicGameVars.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaytomicGameVars.h; sourceTree = "<group>"; };
+		3B79DF0C14B49B32007503F2 /* PlaytomicGameVars.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaytomicGameVars.m; sourceTree = "<group>"; };
+		3B79DF0D14B49B32007503F2 /* PlaytomicGeoIP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaytomicGeoIP.h; sourceTree = "<group>"; };
+		3B79DF0E14B49B32007503F2 /* PlaytomicGeoIP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaytomicGeoIP.m; sourceTree = "<group>"; };
+		3B79DF0F14B49B32007503F2 /* PlaytomicLeaderboards.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaytomicLeaderboards.h; sourceTree = "<group>"; };
+		3B79DF1014B49B32007503F2 /* PlaytomicLeaderboards.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaytomicLeaderboards.m; sourceTree = "<group>"; };
+		3B79DF1114B49B32007503F2 /* PlaytomicLevel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaytomicLevel.h; sourceTree = "<group>"; };
+		3B79DF1214B49B32007503F2 /* PlaytomicLevel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaytomicLevel.m; sourceTree = "<group>"; };
+		3B79DF1314B49B32007503F2 /* PlaytomicLink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaytomicLink.h; sourceTree = "<group>"; };
+		3B79DF1414B49B32007503F2 /* PlaytomicLink.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaytomicLink.m; sourceTree = "<group>"; };
+		3B79DF1514B49B32007503F2 /* PlaytomicLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaytomicLog.h; sourceTree = "<group>"; };
+		3B79DF1614B49B32007503F2 /* PlaytomicLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaytomicLog.m; sourceTree = "<group>"; };
+		3B79DF1714B49B32007503F2 /* PlaytomicLogRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaytomicLogRequest.h; sourceTree = "<group>"; };
+		3B79DF1814B49B32007503F2 /* PlaytomicLogRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaytomicLogRequest.m; sourceTree = "<group>"; };
+		3B79DF1914B49B32007503F2 /* PlaytomicPlayerLevels.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaytomicPlayerLevels.h; sourceTree = "<group>"; };
+		3B79DF1A14B49B32007503F2 /* PlaytomicPlayerLevels.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaytomicPlayerLevels.m; sourceTree = "<group>"; };
+		3B79DF1B14B49B32007503F2 /* PlaytomicPrivateLeaderboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaytomicPrivateLeaderboard.h; sourceTree = "<group>"; };
+		3B79DF1C14B49B32007503F2 /* PlaytomicPrivateLeaderboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaytomicPrivateLeaderboard.m; sourceTree = "<group>"; };
+		3B79DF1D14B49B32007503F2 /* PlaytomicRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaytomicRequest.h; sourceTree = "<group>"; };
+		3B79DF1E14B49B32007503F2 /* PlaytomicRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaytomicRequest.m; sourceTree = "<group>"; };
+		3B79DF1F14B49B32007503F2 /* PlaytomicResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaytomicResponse.h; sourceTree = "<group>"; };
+		3B79DF2014B49B32007503F2 /* PlaytomicResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaytomicResponse.m; sourceTree = "<group>"; };
+		3B79DF2114B49B32007503F2 /* PlaytomicScore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaytomicScore.h; sourceTree = "<group>"; };
+		3B79DF2214B49B32007503F2 /* PlaytomicScore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaytomicScore.m; sourceTree = "<group>"; };
+		3B79DF2314B49B32007503F2 /* PlaytomicURLRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaytomicURLRequest.h; sourceTree = "<group>"; };
+		3B79DF2414B49B32007503F2 /* PlaytomicURLRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaytomicURLRequest.m; sourceTree = "<group>"; };
+		3B79DF2614B49B32007503F2 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		3B79DF2714B49B32007503F2 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		3BC8903514719706002E19AE /* libz.1.2.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.3.dylib; path = usr/lib/libz.1.2.3.dylib; sourceTree = SDKROOT; };
 		3BC8903814719721002E19AE /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		3BC8903A1471972D002E19AE /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		3BC8903C1471973A002E19AE /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		3BC890AB1471A7A8002E19AE /* ASI LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "ASI LICENSE"; sourceTree = "<group>"; };
-		3BC890AC1471A7A8002E19AE /* ASIAuthenticationDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIAuthenticationDialog.h; sourceTree = "<group>"; };
-		3BC890AD1471A7A8002E19AE /* ASIAuthenticationDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIAuthenticationDialog.m; sourceTree = "<group>"; };
-		3BC890AE1471A7A8002E19AE /* ASICacheDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASICacheDelegate.h; sourceTree = "<group>"; };
-		3BC890AF1471A7A8002E19AE /* ASIDataCompressor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIDataCompressor.h; sourceTree = "<group>"; };
-		3BC890B01471A7A8002E19AE /* ASIDataCompressor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIDataCompressor.m; sourceTree = "<group>"; };
-		3BC890B11471A7A8002E19AE /* ASIDataDecompressor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIDataDecompressor.h; sourceTree = "<group>"; };
-		3BC890B21471A7A8002E19AE /* ASIDataDecompressor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIDataDecompressor.m; sourceTree = "<group>"; };
-		3BC890B31471A7A8002E19AE /* ASIDownloadCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIDownloadCache.h; sourceTree = "<group>"; };
-		3BC890B41471A7A8002E19AE /* ASIDownloadCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIDownloadCache.m; sourceTree = "<group>"; };
-		3BC890B51471A7A8002E19AE /* ASIFormDataRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIFormDataRequest.h; sourceTree = "<group>"; };
-		3BC890B61471A7A8002E19AE /* ASIFormDataRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIFormDataRequest.m; sourceTree = "<group>"; };
-		3BC890B71471A7A8002E19AE /* ASIHTTPRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIHTTPRequest.h; sourceTree = "<group>"; };
-		3BC890B81471A7A8002E19AE /* ASIHTTPRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIHTTPRequest.m; sourceTree = "<group>"; };
-		3BC890B91471A7A8002E19AE /* ASIHTTPRequestConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIHTTPRequestConfig.h; sourceTree = "<group>"; };
-		3BC890BA1471A7A8002E19AE /* ASIHTTPRequestDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIHTTPRequestDelegate.h; sourceTree = "<group>"; };
-		3BC890BB1471A7A8002E19AE /* ASIInputStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIInputStream.h; sourceTree = "<group>"; };
-		3BC890BC1471A7A8002E19AE /* ASIInputStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIInputStream.m; sourceTree = "<group>"; };
-		3BC890BD1471A7A8002E19AE /* ASINetworkQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASINetworkQueue.h; sourceTree = "<group>"; };
-		3BC890BE1471A7A8002E19AE /* ASINetworkQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASINetworkQueue.m; sourceTree = "<group>"; };
-		3BC890BF1471A7A8002E19AE /* ASIProgressDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIProgressDelegate.h; sourceTree = "<group>"; };
-		3BC890C11471A7A8002E19AE /* Credits.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Credits.markdown; sourceTree = "<group>"; };
-		3BC890C21471A7A8002E19AE /* JSON LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "JSON LICENSE"; sourceTree = "<group>"; };
-		3BC890C31471A7A8002E19AE /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSON.h; sourceTree = "<group>"; };
-		3BC890C41471A7A8002E19AE /* NSObject+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJSON.h"; sourceTree = "<group>"; };
-		3BC890C51471A7A8002E19AE /* NSObject+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SBJSON.m"; sourceTree = "<group>"; };
-		3BC890C61471A7A8002E19AE /* NSString+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SBJSON.h"; sourceTree = "<group>"; };
-		3BC890C71471A7A8002E19AE /* NSString+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SBJSON.m"; sourceTree = "<group>"; };
-		3BC890C81471A7A8002E19AE /* SBJsonBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonBase.h; sourceTree = "<group>"; };
-		3BC890C91471A7A8002E19AE /* SBJsonBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonBase.m; sourceTree = "<group>"; };
-		3BC890CA1471A7A8002E19AE /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonParser.h; sourceTree = "<group>"; };
-		3BC890CB1471A7A8002E19AE /* SBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonParser.m; sourceTree = "<group>"; };
-		3BC890CC1471A7A8002E19AE /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
-		3BC890CD1471A7A8002E19AE /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
-		3BC890CE1471A7A8002E19AE /* Playtomic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Playtomic.h; sourceTree = "<group>"; };
-		3BC890CF1471A7A8002E19AE /* Playtomic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Playtomic.m; sourceTree = "<group>"; };
-		3BC890D01471A7A8002E19AE /* PlaytomicData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaytomicData.h; sourceTree = "<group>"; };
-		3BC890D11471A7A8002E19AE /* PlaytomicData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaytomicData.m; sourceTree = "<group>"; };
-		3BC890D21471A7A8002E19AE /* PlaytomicEncrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaytomicEncrypt.h; sourceTree = "<group>"; };
-		3BC890D31471A7A8002E19AE /* PlaytomicEncrypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaytomicEncrypt.m; sourceTree = "<group>"; };
-		3BC890D41471A7A8002E19AE /* PlaytomicGameVars.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaytomicGameVars.h; sourceTree = "<group>"; };
-		3BC890D51471A7A8002E19AE /* PlaytomicGameVars.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaytomicGameVars.m; sourceTree = "<group>"; };
-		3BC890D61471A7A8002E19AE /* PlaytomicGeoIP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaytomicGeoIP.h; sourceTree = "<group>"; };
-		3BC890D71471A7A8002E19AE /* PlaytomicGeoIP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaytomicGeoIP.m; sourceTree = "<group>"; };
-		3BC890D81471A7A8002E19AE /* PlaytomicLeaderboards.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaytomicLeaderboards.h; sourceTree = "<group>"; };
-		3BC890D91471A7A8002E19AE /* PlaytomicLeaderboards.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaytomicLeaderboards.m; sourceTree = "<group>"; };
-		3BC890DA1471A7A8002E19AE /* PlaytomicLevel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaytomicLevel.h; sourceTree = "<group>"; };
-		3BC890DB1471A7A8002E19AE /* PlaytomicLevel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaytomicLevel.m; sourceTree = "<group>"; };
-		3BC890DC1471A7A8002E19AE /* PlaytomicLink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaytomicLink.h; sourceTree = "<group>"; };
-		3BC890DD1471A7A8002E19AE /* PlaytomicLink.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaytomicLink.m; sourceTree = "<group>"; };
-		3BC890DE1471A7A8002E19AE /* PlaytomicLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaytomicLog.h; sourceTree = "<group>"; };
-		3BC890DF1471A7A8002E19AE /* PlaytomicLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaytomicLog.m; sourceTree = "<group>"; };
-		3BC890E01471A7A8002E19AE /* PlaytomicLogRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaytomicLogRequest.h; sourceTree = "<group>"; };
-		3BC890E11471A7A8002E19AE /* PlaytomicLogRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaytomicLogRequest.m; sourceTree = "<group>"; };
-		3BC890E21471A7A8002E19AE /* PlaytomicPlayerLevels.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaytomicPlayerLevels.h; sourceTree = "<group>"; };
-		3BC890E31471A7A8002E19AE /* PlaytomicPlayerLevels.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaytomicPlayerLevels.m; sourceTree = "<group>"; };
-		3BC890E41471A7A8002E19AE /* PlaytomicPrivateLeaderboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaytomicPrivateLeaderboard.h; sourceTree = "<group>"; };
-		3BC890E51471A7A8002E19AE /* PlaytomicPrivateLeaderboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaytomicPrivateLeaderboard.m; sourceTree = "<group>"; };
-		3BC890E61471A7A8002E19AE /* PlaytomicRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaytomicRequest.h; sourceTree = "<group>"; };
-		3BC890E71471A7A8002E19AE /* PlaytomicRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaytomicRequest.m; sourceTree = "<group>"; };
-		3BC890E81471A7A8002E19AE /* PlaytomicResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaytomicResponse.h; sourceTree = "<group>"; };
-		3BC890E91471A7A8002E19AE /* PlaytomicResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaytomicResponse.m; sourceTree = "<group>"; };
-		3BC890EA1471A7A8002E19AE /* PlaytomicScore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaytomicScore.h; sourceTree = "<group>"; };
-		3BC890EB1471A7A8002E19AE /* PlaytomicScore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaytomicScore.m; sourceTree = "<group>"; };
-		3BC890ED1471A7A8002E19AE /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
-		3BC890EE1471A7A8002E19AE /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		3BFC7D5814A3C4A000526CA1 /* libz.1.2.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.3.dylib; path = usr/lib/libz.1.2.3.dylib; sourceTree = SDKROOT; };
 		504DFBC810AF12E9006D82FE /* CLScoreServerPost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLScoreServerPost.h; sourceTree = "<group>"; };
 		504DFBC910AF12E9006D82FE /* CLScoreServerPost.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLScoreServerPost.m; sourceTree = "<group>"; };
@@ -693,8 +666,8 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				3B79DEF614B49B32007503F2 /* Playtomic */,
 				3BFC7D5814A3C4A000526CA1 /* libz.1.2.3.dylib */,
-				3BC890A91471A7A8002E19AE /* Playtomic */,
 				3BC8903C1471973A002E19AE /* SystemConfiguration.framework */,
 				3BC8903A1471972D002E19AE /* MobileCoreServices.framework */,
 				3BC8903814719721002E19AE /* CFNetwork.framework */,
@@ -760,99 +733,72 @@
 			path = Classes;
 			sourceTree = "<group>";
 		};
-		3BC890A91471A7A8002E19AE /* Playtomic */ = {
+		3B79DEF614B49B32007503F2 /* Playtomic */ = {
 			isa = PBXGroup;
 			children = (
-				3BC890AA1471A7A8002E19AE /* ASI */,
-				3BC890C01471A7A8002E19AE /* JSON */,
-				3BC890CE1471A7A8002E19AE /* Playtomic.h */,
-				3BC890CF1471A7A8002E19AE /* Playtomic.m */,
-				3BC890D01471A7A8002E19AE /* PlaytomicData.h */,
-				3BC890D11471A7A8002E19AE /* PlaytomicData.m */,
-				3BC890D21471A7A8002E19AE /* PlaytomicEncrypt.h */,
-				3BC890D31471A7A8002E19AE /* PlaytomicEncrypt.m */,
-				3BC890D41471A7A8002E19AE /* PlaytomicGameVars.h */,
-				3BC890D51471A7A8002E19AE /* PlaytomicGameVars.m */,
-				3BC890D61471A7A8002E19AE /* PlaytomicGeoIP.h */,
-				3BC890D71471A7A8002E19AE /* PlaytomicGeoIP.m */,
-				3BC890D81471A7A8002E19AE /* PlaytomicLeaderboards.h */,
-				3BC890D91471A7A8002E19AE /* PlaytomicLeaderboards.m */,
-				3BC890DA1471A7A8002E19AE /* PlaytomicLevel.h */,
-				3BC890DB1471A7A8002E19AE /* PlaytomicLevel.m */,
-				3BC890DC1471A7A8002E19AE /* PlaytomicLink.h */,
-				3BC890DD1471A7A8002E19AE /* PlaytomicLink.m */,
-				3BC890DE1471A7A8002E19AE /* PlaytomicLog.h */,
-				3BC890DF1471A7A8002E19AE /* PlaytomicLog.m */,
-				3BC890E01471A7A8002E19AE /* PlaytomicLogRequest.h */,
-				3BC890E11471A7A8002E19AE /* PlaytomicLogRequest.m */,
-				3BC890E21471A7A8002E19AE /* PlaytomicPlayerLevels.h */,
-				3BC890E31471A7A8002E19AE /* PlaytomicPlayerLevels.m */,
-				3BC890E41471A7A8002E19AE /* PlaytomicPrivateLeaderboard.h */,
-				3BC890E51471A7A8002E19AE /* PlaytomicPrivateLeaderboard.m */,
-				3BC890E61471A7A8002E19AE /* PlaytomicRequest.h */,
-				3BC890E71471A7A8002E19AE /* PlaytomicRequest.m */,
-				3BC890E81471A7A8002E19AE /* PlaytomicResponse.h */,
-				3BC890E91471A7A8002E19AE /* PlaytomicResponse.m */,
-				3BC890EA1471A7A8002E19AE /* PlaytomicScore.h */,
-				3BC890EB1471A7A8002E19AE /* PlaytomicScore.m */,
-				3BC890EC1471A7A8002E19AE /* Reachability */,
+				3B79DEF714B49B32007503F2 /* JSON */,
+				3B79DF0514B49B32007503F2 /* Playtomic.h */,
+				3B79DF0614B49B32007503F2 /* Playtomic.m */,
+				3B79DF0714B49B32007503F2 /* PlaytomicData.h */,
+				3B79DF0814B49B32007503F2 /* PlaytomicData.m */,
+				3B79DF0914B49B32007503F2 /* PlaytomicEncrypt.h */,
+				3B79DF0A14B49B32007503F2 /* PlaytomicEncrypt.m */,
+				3B79DF0B14B49B32007503F2 /* PlaytomicGameVars.h */,
+				3B79DF0C14B49B32007503F2 /* PlaytomicGameVars.m */,
+				3B79DF0D14B49B32007503F2 /* PlaytomicGeoIP.h */,
+				3B79DF0E14B49B32007503F2 /* PlaytomicGeoIP.m */,
+				3B79DF0F14B49B32007503F2 /* PlaytomicLeaderboards.h */,
+				3B79DF1014B49B32007503F2 /* PlaytomicLeaderboards.m */,
+				3B79DF1114B49B32007503F2 /* PlaytomicLevel.h */,
+				3B79DF1214B49B32007503F2 /* PlaytomicLevel.m */,
+				3B79DF1314B49B32007503F2 /* PlaytomicLink.h */,
+				3B79DF1414B49B32007503F2 /* PlaytomicLink.m */,
+				3B79DF1514B49B32007503F2 /* PlaytomicLog.h */,
+				3B79DF1614B49B32007503F2 /* PlaytomicLog.m */,
+				3B79DF1714B49B32007503F2 /* PlaytomicLogRequest.h */,
+				3B79DF1814B49B32007503F2 /* PlaytomicLogRequest.m */,
+				3B79DF1914B49B32007503F2 /* PlaytomicPlayerLevels.h */,
+				3B79DF1A14B49B32007503F2 /* PlaytomicPlayerLevels.m */,
+				3B79DF1B14B49B32007503F2 /* PlaytomicPrivateLeaderboard.h */,
+				3B79DF1C14B49B32007503F2 /* PlaytomicPrivateLeaderboard.m */,
+				3B79DF1D14B49B32007503F2 /* PlaytomicRequest.h */,
+				3B79DF1E14B49B32007503F2 /* PlaytomicRequest.m */,
+				3B79DF1F14B49B32007503F2 /* PlaytomicResponse.h */,
+				3B79DF2014B49B32007503F2 /* PlaytomicResponse.m */,
+				3B79DF2114B49B32007503F2 /* PlaytomicScore.h */,
+				3B79DF2214B49B32007503F2 /* PlaytomicScore.m */,
+				3B79DF2314B49B32007503F2 /* PlaytomicURLRequest.h */,
+				3B79DF2414B49B32007503F2 /* PlaytomicURLRequest.m */,
+				3B79DF2514B49B32007503F2 /* Reachability */,
 			);
 			path = Playtomic;
 			sourceTree = "<group>";
 		};
-		3BC890AA1471A7A8002E19AE /* ASI */ = {
+		3B79DEF714B49B32007503F2 /* JSON */ = {
 			isa = PBXGroup;
 			children = (
-				3BC890AB1471A7A8002E19AE /* ASI LICENSE */,
-				3BC890AC1471A7A8002E19AE /* ASIAuthenticationDialog.h */,
-				3BC890AD1471A7A8002E19AE /* ASIAuthenticationDialog.m */,
-				3BC890AE1471A7A8002E19AE /* ASICacheDelegate.h */,
-				3BC890AF1471A7A8002E19AE /* ASIDataCompressor.h */,
-				3BC890B01471A7A8002E19AE /* ASIDataCompressor.m */,
-				3BC890B11471A7A8002E19AE /* ASIDataDecompressor.h */,
-				3BC890B21471A7A8002E19AE /* ASIDataDecompressor.m */,
-				3BC890B31471A7A8002E19AE /* ASIDownloadCache.h */,
-				3BC890B41471A7A8002E19AE /* ASIDownloadCache.m */,
-				3BC890B51471A7A8002E19AE /* ASIFormDataRequest.h */,
-				3BC890B61471A7A8002E19AE /* ASIFormDataRequest.m */,
-				3BC890B71471A7A8002E19AE /* ASIHTTPRequest.h */,
-				3BC890B81471A7A8002E19AE /* ASIHTTPRequest.m */,
-				3BC890B91471A7A8002E19AE /* ASIHTTPRequestConfig.h */,
-				3BC890BA1471A7A8002E19AE /* ASIHTTPRequestDelegate.h */,
-				3BC890BB1471A7A8002E19AE /* ASIInputStream.h */,
-				3BC890BC1471A7A8002E19AE /* ASIInputStream.m */,
-				3BC890BD1471A7A8002E19AE /* ASINetworkQueue.h */,
-				3BC890BE1471A7A8002E19AE /* ASINetworkQueue.m */,
-				3BC890BF1471A7A8002E19AE /* ASIProgressDelegate.h */,
-			);
-			path = ASI;
-			sourceTree = "<group>";
-		};
-		3BC890C01471A7A8002E19AE /* JSON */ = {
-			isa = PBXGroup;
-			children = (
-				3BC890C11471A7A8002E19AE /* Credits.markdown */,
-				3BC890C21471A7A8002E19AE /* JSON LICENSE */,
-				3BC890C31471A7A8002E19AE /* JSON.h */,
-				3BC890C41471A7A8002E19AE /* NSObject+SBJSON.h */,
-				3BC890C51471A7A8002E19AE /* NSObject+SBJSON.m */,
-				3BC890C61471A7A8002E19AE /* NSString+SBJSON.h */,
-				3BC890C71471A7A8002E19AE /* NSString+SBJSON.m */,
-				3BC890C81471A7A8002E19AE /* SBJsonBase.h */,
-				3BC890C91471A7A8002E19AE /* SBJsonBase.m */,
-				3BC890CA1471A7A8002E19AE /* SBJsonParser.h */,
-				3BC890CB1471A7A8002E19AE /* SBJsonParser.m */,
-				3BC890CC1471A7A8002E19AE /* SBJsonWriter.h */,
-				3BC890CD1471A7A8002E19AE /* SBJsonWriter.m */,
+				3B79DEF814B49B32007503F2 /* Credits.markdown */,
+				3B79DEF914B49B32007503F2 /* JSON LICENSE */,
+				3B79DEFA14B49B32007503F2 /* JSON.h */,
+				3B79DEFB14B49B32007503F2 /* NSObject+SBJSON.h */,
+				3B79DEFC14B49B32007503F2 /* NSObject+SBJSON.m */,
+				3B79DEFD14B49B32007503F2 /* NSString+SBJSON.h */,
+				3B79DEFE14B49B32007503F2 /* NSString+SBJSON.m */,
+				3B79DEFF14B49B32007503F2 /* SBJsonBase.h */,
+				3B79DF0014B49B32007503F2 /* SBJsonBase.m */,
+				3B79DF0114B49B32007503F2 /* SBJsonParser.h */,
+				3B79DF0214B49B32007503F2 /* SBJsonParser.m */,
+				3B79DF0314B49B32007503F2 /* SBJsonWriter.h */,
+				3B79DF0414B49B32007503F2 /* SBJsonWriter.m */,
 			);
 			path = JSON;
 			sourceTree = "<group>";
 		};
-		3BC890EC1471A7A8002E19AE /* Reachability */ = {
+		3B79DF2514B49B32007503F2 /* Reachability */ = {
 			isa = PBXGroup;
 			children = (
-				3BC890ED1471A7A8002E19AE /* Reachability.h */,
-				3BC890EE1471A7A8002E19AE /* Reachability.m */,
+				3B79DF2614B49B32007503F2 /* Reachability.h */,
+				3B79DF2714B49B32007503F2 /* Reachability.m */,
 			);
 			path = Reachability;
 			sourceTree = "<group>";
@@ -1403,9 +1349,8 @@
 				E11EC318129A2F61008B1CA2 /* background-music-aac.caf in Resources */,
 				E11EC319129A2F61008B1CA2 /* pew-pew-lei.caf in Resources */,
 				E11EC31A129A2F61008B1CA2 /* Target.png in Resources */,
-				3BC890EF1471A7A8002E19AE /* ASI LICENSE in Resources */,
-				3BC890F81471A7A8002E19AE /* Credits.markdown in Resources */,
-				3BC890F91471A7A8002E19AE /* JSON LICENSE in Resources */,
+				3B79DF2814B49B32007503F2 /* Credits.markdown in Resources */,
+				3B79DF2914B49B32007503F2 /* JSON LICENSE in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1425,35 +1370,28 @@
 				E11EC304129A2F54008B1CA2 /* Level.m in Sources */,
 				E11EC305129A2F54008B1CA2 /* NewLevelScene.m in Sources */,
 				E11EC306129A2F54008B1CA2 /* Projectile.m in Sources */,
-				3BC890F01471A7A8002E19AE /* ASIAuthenticationDialog.m in Sources */,
-				3BC890F11471A7A8002E19AE /* ASIDataCompressor.m in Sources */,
-				3BC890F21471A7A8002E19AE /* ASIDataDecompressor.m in Sources */,
-				3BC890F31471A7A8002E19AE /* ASIDownloadCache.m in Sources */,
-				3BC890F41471A7A8002E19AE /* ASIFormDataRequest.m in Sources */,
-				3BC890F51471A7A8002E19AE /* ASIHTTPRequest.m in Sources */,
-				3BC890F61471A7A8002E19AE /* ASIInputStream.m in Sources */,
-				3BC890F71471A7A8002E19AE /* ASINetworkQueue.m in Sources */,
-				3BC890FA1471A7A8002E19AE /* NSObject+SBJSON.m in Sources */,
-				3BC890FB1471A7A8002E19AE /* NSString+SBJSON.m in Sources */,
-				3BC890FC1471A7A8002E19AE /* SBJsonBase.m in Sources */,
-				3BC890FD1471A7A8002E19AE /* SBJsonParser.m in Sources */,
-				3BC890FE1471A7A8002E19AE /* SBJsonWriter.m in Sources */,
-				3BC890FF1471A7A8002E19AE /* Playtomic.m in Sources */,
-				3BC891001471A7A8002E19AE /* PlaytomicData.m in Sources */,
-				3BC891011471A7A8002E19AE /* PlaytomicEncrypt.m in Sources */,
-				3BC891021471A7A8002E19AE /* PlaytomicGameVars.m in Sources */,
-				3BC891031471A7A8002E19AE /* PlaytomicGeoIP.m in Sources */,
-				3BC891041471A7A8002E19AE /* PlaytomicLeaderboards.m in Sources */,
-				3BC891051471A7A8002E19AE /* PlaytomicLevel.m in Sources */,
-				3BC891061471A7A8002E19AE /* PlaytomicLink.m in Sources */,
-				3BC891071471A7A8002E19AE /* PlaytomicLog.m in Sources */,
-				3BC891081471A7A8002E19AE /* PlaytomicLogRequest.m in Sources */,
-				3BC891091471A7A8002E19AE /* PlaytomicPlayerLevels.m in Sources */,
-				3BC8910A1471A7A8002E19AE /* PlaytomicPrivateLeaderboard.m in Sources */,
-				3BC8910B1471A7A8002E19AE /* PlaytomicRequest.m in Sources */,
-				3BC8910C1471A7A8002E19AE /* PlaytomicResponse.m in Sources */,
-				3BC8910D1471A7A8002E19AE /* PlaytomicScore.m in Sources */,
-				3BC8910E1471A7A8002E19AE /* Reachability.m in Sources */,
+				3B79DF2A14B49B32007503F2 /* NSObject+SBJSON.m in Sources */,
+				3B79DF2B14B49B32007503F2 /* NSString+SBJSON.m in Sources */,
+				3B79DF2C14B49B32007503F2 /* SBJsonBase.m in Sources */,
+				3B79DF2D14B49B32007503F2 /* SBJsonParser.m in Sources */,
+				3B79DF2E14B49B32007503F2 /* SBJsonWriter.m in Sources */,
+				3B79DF2F14B49B32007503F2 /* Playtomic.m in Sources */,
+				3B79DF3014B49B32007503F2 /* PlaytomicData.m in Sources */,
+				3B79DF3114B49B32007503F2 /* PlaytomicEncrypt.m in Sources */,
+				3B79DF3214B49B32007503F2 /* PlaytomicGameVars.m in Sources */,
+				3B79DF3314B49B32007503F2 /* PlaytomicGeoIP.m in Sources */,
+				3B79DF3414B49B32007503F2 /* PlaytomicLeaderboards.m in Sources */,
+				3B79DF3514B49B32007503F2 /* PlaytomicLevel.m in Sources */,
+				3B79DF3614B49B32007503F2 /* PlaytomicLink.m in Sources */,
+				3B79DF3714B49B32007503F2 /* PlaytomicLog.m in Sources */,
+				3B79DF3814B49B32007503F2 /* PlaytomicLogRequest.m in Sources */,
+				3B79DF3914B49B32007503F2 /* PlaytomicPlayerLevels.m in Sources */,
+				3B79DF3A14B49B32007503F2 /* PlaytomicPrivateLeaderboard.m in Sources */,
+				3B79DF3B14B49B32007503F2 /* PlaytomicRequest.m in Sources */,
+				3B79DF3C14B49B32007503F2 /* PlaytomicResponse.m in Sources */,
+				3B79DF3D14B49B32007503F2 /* PlaytomicScore.m in Sources */,
+				3B79DF3E14B49B32007503F2 /* PlaytomicURLRequest.m in Sources */,
+				3B79DF3F14B49B32007503F2 /* Reachability.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1575,7 +1513,7 @@
 		1D6058940D05DD3E006BFB54 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -1597,7 +1535,7 @@
 		1D6058950D05DD3E006BFB54 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -1641,7 +1579,7 @@
 		C01FCF4F08A954540054247B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_C_LANGUAGE_STANDARD = c99;
@@ -1665,7 +1603,7 @@
 		C01FCF5008A954540054247B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_C_LANGUAGE_STANDARD = c99;

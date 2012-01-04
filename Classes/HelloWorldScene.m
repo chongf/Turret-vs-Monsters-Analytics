@@ -200,10 +200,7 @@
         	
 		// Start up the background music
 		//[[SimpleAudioEngine sharedEngine] playBackgroundMusic:@"background-music-aac.caf"];
-		
-		// Playtomic
-		[[Playtomic alloc] initWithGameId:5091 andGUID:@"9c1c51dd5f564cc0" andAPIKey:@"28c07287469242bfa94b1983cc9c44"]; 
-		[[Playtomic Log] view];		
+				
 	}
 	
 	return self;

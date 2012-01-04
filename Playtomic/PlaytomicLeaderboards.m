@@ -41,18 +41,17 @@
 #import "PlaytomicEncrypt.h"
 #import "PlaytomicRequest.h"
 #import "JSON/JSON.h"
-#import "ASI/ASIFormDataRequest.h"
-#import "ASI/ASIHTTPRequest.h"
 #import "PlaytomicPrivateLeaderboard.h"
+#import "PlaytomicURLRequest.h"
 
 
 @interface PlaytomicLeaderboards() 
 
-- (void)requestSaveFinished:(ASIHTTPRequest*)request;
-- (void)requestListFinished:(ASIHTTPRequest*)request;
-- (void)requestSaveAndListFinished:(ASIHTTPRequest*)request;
-- (void)requestCreatePrivateFinished:(ASIHTTPRequest*) request;
-- (void)requestLoadPrivateFinished:(ASIHTTPRequest*) request;
+- (void)requestSaveFinished:(PlaytomicURLRequest*)request;
+- (void)requestListFinished:(PlaytomicURLRequest*)request;
+- (void)requestSaveAndListFinished:(PlaytomicURLRequest*)request;
+- (void)requestCreatePrivateFinished:(PlaytomicURLRequest*) request;
+- (void)requestLoadPrivateFinished:(PlaytomicURLRequest*) request;
 
 @end
 
@@ -501,7 +500,7 @@
     [PlaytomicRequest sendRequestUrl:url andSection:section andAction:action andCompleteDelegate:self andCompleteSelector:@selector(requestSaveFinished:) andPostData:postData];    
 }
 
-- (void)requestSaveFinished:(ASIHTTPRequest*)request
+- (void)requestSaveFinished:(PlaytomicURLRequest*)request
 {
     if (!(delegate && [delegate respondsToSelector:@selector(requestSaveLeaderboardFinished:)])) {
         return;
@@ -523,7 +522,7 @@
     
     [json release];
     [parser release];
-    
+    [request release];
     if(status == 1)
     {
         NSInteger errorcode = [[data valueForKey:@"ErrorCode"] integerValue];
@@ -591,7 +590,7 @@
     delegate = aDelegate;    
 }
 
-- (void)requestListFinished:(ASIHTTPRequest*)request
+- (void)requestListFinished:(PlaytomicURLRequest*)request
 {
     if (!(delegate && [delegate respondsToSelector:@selector(requestListLeaderboardFinished:)])) {
         return;
@@ -613,10 +612,9 @@
     NSArray *data = [parser objectWithString:json error:nil];
     NSInteger status = [[data valueForKey:@"Status"] integerValue];
     
-    //[request autorelease];
     [json release];
     [parser release];
-    
+    [request release];
     // failed on the server side
     if(status != 1)
     {
@@ -752,7 +750,7 @@
     delegate = aDelegate;
 }
 
-- (void)requestSaveAndListFinished:(ASIHTTPRequest*)request
+- (void)requestSaveAndListFinished:(PlaytomicURLRequest*)request
 {
     if (!(delegate && [delegate respondsToSelector:@selector(requestSaveAndListLeaderboardFinished:)])) {
         return;
@@ -858,7 +856,7 @@
                  andCompleteSelector:@selector(requestCreatePrivateFinished:)
                          andPostData:postData];
 }
-- (void)requestCreatePrivateFinished:(ASIHTTPRequest*) request
+- (void)requestCreatePrivateFinished:(PlaytomicURLRequest*) request
 {
     if (!(delegate && [delegate respondsToSelector:@selector(requestCreateprivateLeaderboardFinish:)])) {
         return;
@@ -937,7 +935,7 @@
     
 }
 
-- (void)requestLoadPrivateFinished:(ASIHTTPRequest*) request
+- (void)requestLoadPrivateFinished:(PlaytomicURLRequest*) request
 {
     if (!(delegate && [delegate respondsToSelector:@selector(requestLoadprivateLeaderboardFinish:)])) {
         return;

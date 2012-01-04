@@ -41,12 +41,12 @@ extern NSString * const PLAYTOMIC_QUEUE_ITEM;
 extern NSString * const PLAYTOMIC_QUEUE_READY;
 extern int const PLAYTOMIC_QUEUE_MAX_BYTES;
 
-@class ASIHTTPRequest;
+@class PlaytomicURLRequest;
 
 @interface PlaytomicLogRequest : NSObject {
     NSString *data;
     NSString *trackUrl;
-    ASIHTTPRequest* _request;
+    PlaytomicURLRequest* _request;
     BOOL mustReleaseOnRequestFinished;
 }
 
